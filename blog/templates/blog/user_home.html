@@ -1,4 +1,5 @@
 {% extends 'blog/base.html' %}
 {% block content %}
+    <h2 class="mb-3">Posted by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h2>
     {% include 'blog/body.html' %}
 {% endblock content %}
