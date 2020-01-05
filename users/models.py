@@ -1,3 +1,4 @@
+from django.contrib import admin
 from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
@@ -19,3 +20,4 @@ class Profile(models.Model):
             output_size = (300, 300)
             img.thumbnail(output_size)
             img.save(self.image.path)
+
